@@ -7,8 +7,10 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         br.close();
-        for (int i=0; i<n; i++) {
+        int i = 0;
+        while (i<n) {
             System.out.println("*");
+            i++;
         }
     }
 }
