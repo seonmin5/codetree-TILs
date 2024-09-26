@@ -13,7 +13,7 @@ public class Main {
         int b = Integer.parseInt(st.nextToken());
 
         System.out.printf("%d ", a);
-        while (a < b) {
+        while (a <= b) {
             if (a % 2 == 1) {
                 a *= 2;
             } else {
