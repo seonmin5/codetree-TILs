@@ -14,9 +14,9 @@ public class Main {
 
         System.out.printf("%d ", a);
         while (a <= b) {
-            if (a % 2 == 1) {
+            if (a % 2 == 1  && a <= b) {
                 a *= 2;
-            } else {
+            } else if (a % 2 == 0 && a <= b){
                 a += 3;
             }
             System.out.printf("%d ", a);
