@@ -12,14 +12,13 @@ public class Main {
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
 
-        System.out.printf("%d ", a);
         while (a <= b) {
-            if (a % 2 == 1  && a <= b) {
+            System.out.printf("%d ", a);
+            if (a % 2 == 1) {
                 a *= 2;
-            } else if (a % 2 == 0 && a <= b){
+            } else {
                 a += 3;
             }
-            System.out.printf("%d ", a);
         }
     }
 }
