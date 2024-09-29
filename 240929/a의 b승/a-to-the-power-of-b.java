@@ -11,8 +11,8 @@ public class Main {
         int b = Integer.parseInt(inputs[1]);
         br.close();
 
-        int result = a;
-        for (int i=a; i<=b; i++) {
+        int result = 1;
+        for (int i=0; i<b; i++) {
             result *= a;
         }
 
