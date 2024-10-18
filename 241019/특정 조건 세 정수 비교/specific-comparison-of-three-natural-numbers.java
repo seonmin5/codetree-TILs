@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 
 public class Main {
     private static int minimumValue(int a, int b, int c) {
-        if (a < b && a < c) {
+        if (a <= b && a <= c) {
             return 1;
         } return 0;
     }
