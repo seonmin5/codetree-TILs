@@ -10,6 +10,8 @@ public class Main {
 
         if (a < 10 || a > 20) {
             System.out.print("yes");
-        } System.out.print("no");
+        } else {
+            System.out.print("no");
+        }
     }
 }
