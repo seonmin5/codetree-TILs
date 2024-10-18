@@ -13,6 +13,10 @@ public class Main {
         int engB = Integer.parseInt(st.nextToken());
         br.close();
 
-        System.out.print((mathA > mathB && engA > engB) ? 1 : 0);
+        if (mathA > mathB && engA > engB) {
+            System.out.println(1);
+        } else {
+            System.out.println(0);
+        }
     }
 }
