@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 
 public class Main {
     private static boolean isLeapYear(int n) {
-        if (n % 100 == 0 && n % 400 == 0) {
+        if (n % 100 == 0 && n % 400 != 0) {
             return false;
         } else if (n % 4 == 0) {
             return true;
