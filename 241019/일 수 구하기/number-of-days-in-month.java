@@ -18,9 +18,9 @@ public class Main {
     private static int printDate(int n) {
         if (n <= 7 && n % 2 == 1 || n >= 8 && n % 2 == 0) {
             return 31;
-        } else if (n <= 6 && n % 2 == 0 || n >= 9 && n % 2 != 1) {
+        } else {
             return 30;
-        } return 0;
+        }
     }
 
     public static void main(String[] args) throws IOException{
