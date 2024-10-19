@@ -7,6 +7,12 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String s = br.readLine();
         br.close();
-        System.out.print(s+s+s+s+s+s+s+s);
+
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < 8; i++) {
+            sb.append(s);
+        }
+
+        System.out.print(sb.toString());
     }
 }
