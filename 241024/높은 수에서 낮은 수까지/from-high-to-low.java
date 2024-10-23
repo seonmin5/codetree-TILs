@@ -5,8 +5,14 @@ import java.util.StringTokenizer;
 
 public class Main {
     private static void descNumber(int a, int b) {
-        for (int i = b; i >= a; i--) {
-            System.out.printf("%d ", i);
+        if (b >= a) {
+            for (int i = b; i >= a; i--) {
+                System.out.printf("%d ", i);
+            }
+        } else {
+            for (int i = a; i >= b; i--) {
+                System.out.printf("%d ", i);
+            }
         }
     }
 
