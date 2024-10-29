@@ -18,8 +18,14 @@ public class Main {
             }
         }
 
-        for (int i = index-1; i >= 0 ; i--) {
-            System.out.printf("%d ", arr[i]);
+        if (index > 0) {
+            for (int i = index-1; i >= 0; i--) {
+                System.out.printf("%d ", arr[i]);
+            }
+        } else {
+            for (int i = arr.length-1; i >= 0; i--) {
+                System.out.printf("%d ", arr[i]);
+            }
         }
 
         br.close();
