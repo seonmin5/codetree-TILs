@@ -11,10 +11,14 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine().trim());
-            arr[i] = Integer.parseInt(st.nextToken());
-            if (arr[i] % 2 == 0) {
-                System.out.printf("%d ", arr[i]);   
+            int j = Integer.parseInt(st.nextToken());
+            if (n % 2 == 0) {
+                arr[i] = j;
             }
+        }
+
+        for (int i = arr.length-1; i >= 0; i--) {
+            System.out.printf("%d ", arr[i]);
         }
 
         br.close();
