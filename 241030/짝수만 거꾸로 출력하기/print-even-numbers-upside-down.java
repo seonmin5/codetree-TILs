@@ -14,11 +14,12 @@ public class Main {
         for (int i = 0; i < n; i++) {
             int j = Integer.parseInt(st.nextToken());
             if (j % 2 == 0) {
-                arr[idx++] = j;
+                arr[idx] = j;
+                idx++;
             }
         }
 
-        for (int i = arr.length-1; i >= 0; i--) {
+        for (int i = idx-1; i >= 0; i--) {
             System.out.printf("%d ", arr[i]);
         }
 
