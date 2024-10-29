@@ -8,12 +8,13 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine().trim());
         int arr[] = new int[n];
+        int idx = 0;
 
+        StringTokenizer st = new StringTokenizer(br.readLine().trim());
         for (int i = 0; i < n; i++) {
-            StringTokenizer st = new StringTokenizer(br.readLine().trim());
             int j = Integer.parseInt(st.nextToken());
-            if (n % 2 == 0) {
-                arr[i] = j;
+            if (j % 2 == 0) {
+                arr[idx++] = j;
             }
         }
 
